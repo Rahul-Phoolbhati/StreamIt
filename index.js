@@ -22,7 +22,7 @@ const options = [
     '-b:a', '128k',
     '-ar', 128000 / 4,
     '-f', 'flv',
-    `rtmp://a.rtmp.youtube.com/live2/dcfx-m7v2-j248-3185-9207`,
+    `rtmp://a.rtmp.youtube.com/live2/8qhz-fjp3-14v2-2kq0-66cj`,
 ];
 
 const ffmpegProcess = spawn('ffmpeg', options)
@@ -59,7 +59,4 @@ io.on('connection', (socket) => {
 
 app.use(express.static('public'))
 
-
-server.listen(port, () => {
-    console.log(`Example app listening on port ${process.env.PORT}`)
-})
+export default server
